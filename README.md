@@ -12,5 +12,9 @@ The codes in the 'Predicting' are used for predicting new proteins.
 2. To predict your own proteins
    You can replace the information of each column in the 'uniprot_human_proteome.csv' file.
 
+# Functional dense PPI cluster analysis
+You can find the whole RNA granule proteome PPI community in the SI.xlsx file.
+
+------------------------------------------------------------------------------
 Feel free to send me an email if you need any help about the codes.
 The files are under the CC BY-NC license.
