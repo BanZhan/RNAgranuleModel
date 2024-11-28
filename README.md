@@ -1,4 +1,10 @@
 ## RNAgranuleModel
+# Package installation (Python 3.8.8)
+Biopython package (Version: 1.80)
+Scipy package (Version 1.9.3)
+scikit-learn package (Version 1.3.0)
+dcor package (Version 0.6)
+
 # Model training
 The dataset for model training can be downloaded in https://www.researchgate.net/publication/386099818_Training_data_for_the_RNA_granule_model.
 The codes in the 'model training' are used for building RNA granule (i.e., P-body, stress granule, and P-body/stress granule) protein classification models, respectively.
