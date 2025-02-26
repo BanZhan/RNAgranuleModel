@@ -30,10 +30,11 @@ project_directory/
 ├── total_data.fasta  
 ├── uniprot_human_proteome.csv
 ### Training Models
-4. Run the model training script with the appropriate parameters:
-For P-body/Stress granule model: Set target = 'PBSG' in Line 189 and tier = 1 in Line 1
-For P-body model only: Set target = 'PB' in Line 189 and tier = 2 in Line 1
-Execute the training by running:
+4. Run the model training script with the appropriate parameters:  
+For Stress granule model: Set target = 'SG' in Line 189 and tier = 1 in Line 190  
+For P-body/Stress granule model: Set target = 'PBSG' in Line 189 and tier = 1 in Line 190  
+For P-body model only: Set target = 'PB' in Line 189 and tier = 2 in Line 190  
+Execute the training by running:  
 python model_train.py
 
 ## Predicting
