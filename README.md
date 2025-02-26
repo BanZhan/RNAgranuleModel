@@ -6,9 +6,35 @@ scikit-learn package (Version 1.3.0);
 dcor package (Version 0.6)
 
 ## Model training
-The dataset for model training can be downloaded in https://www.researchgate.net/publication/386099818_Training_data_for_the_RNA_granule_model.
-The codes in the 'model training' are used for building RNA granule (i.e., P-body, stress granule, and P-body/stress granule) protein classification models, respectively.
-You can run the model_train.py file to train the RNA granule models.
+This section provides step-by-step instructions to train the RNA granule prediction models.
+### Prerequisites
+1. Download the dataset 'RNAgranule_model_training_data.zip' from the ResearchGate (https://www.researchgate.net/publication/386099818_Training_data_for_the_RNA_granule_model).
+2. Clone or download all files from the 'model training' directory in this repository.
+### Setup
+3. Extract the dataset and place all files (from both the dataset and repository) in a single directory. Your directory structure should look like:
+project_directory/  
+├── aa_features_pre.py  
+├── data_processing.py  
+├── fasta_transfer.py  
+├── IDR_identify.py  
+├── model_train.py  
+├── my_model_SG_1.pickle - my_model_SG_10.pickle  
+├── pdb30.csv  
+├── physicochemical_property_cal.py  
+├── RNA_granule_2Kmer_tier1_result.csv  
+├── RNA_granule_3Kmer_tier1_result.csv  
+├── RNA_granule_data.xlsx  
+├── SG_auc_df.csv  
+├── total_aa.csv  
+├── total_data.csv  
+├── total_data.fasta  
+├── uniprot_human_proteome.csv
+### Training Models
+4. Run the model training script with the appropriate parameters:
+For P-body/Stress granule model: Set target = 'PBSG' in Line 189 and tier = 1 in Line 1
+For P-body model only: Set target = 'PB' in Line 189 and tier = 2 in Line 1
+Execute the training by running:
+python model_train.py
 
 ## Predicting
 The dataset for predicting can be downloaded in https://www.researchgate.net/publication/386100715_RNAgranule_model_predicting_data.
